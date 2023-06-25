@@ -1,0 +1,272 @@
+/* Start variables */
+:root{
+    --main-color: #98633b;
+    --main-duration: 0.3s;
+}
+/* End variables */
+
+/* start global rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* small screens */
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+    .header{
+        padding: 40px;
+    }  
+}
+
+/* medium screens */
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+    .header{
+        padding: 30px;
+    }  
+}
+
+/* large screens */
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+    .header{
+        padding: 20px;
+    }   
+}
+/* end global rules */
+
+/* start header section*/
+
+.header .container{
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.landing .intro-text .logo{
+    width:150px;
+    height:150px;
+}
+
+.header .links{
+    position: relative;
+    width: 100%;
+}
+
+.header .container .links a{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: var(--main-duration);
+}
+
+.header .container .links a:hover{
+    padding-left:  20px;
+    padding-right:  20px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+/* end header section */
+
+/* start landing section */
+.landing{
+    color: white;
+    background-image: url(../images/saint.jpg);
+    background-size: cover;
+    height: calc(100vh - 60px);
+    position: relative;
+}
+
+.landing .intro-text{
+    direction: rtl;
+    text-align: justify;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    font-size: larger;
+}
+
+.landing .intro-text h1{
+    margin: 0;
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--main-color);
+}
+.landing .intro-text p{
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+/* end landing section */
+
+/* start MostSaledCars section */
+.features .container{
+    background-color: #e7e7e7;
+}
+.features .container h3
+{
+    padding-bottom: 30px;
+}
+.features .container h1,
+.new-section .container h1,
+.about .container h1,
+.contact .container h1
+{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 800;
+    opacity: 0.8;
+    color: var(--main-color);
+    letter-spacing: -5px;
+}
+
+.features .container h1 + p,
+.new-section .container h1 +p,
+.about .container h1 + p,
+.contact .container h1 + p
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: -90px;
+    padding-bottom: 30px;
+    opacity: 0.3;
+}
+/* end MostSaledCars section */
+
+/* start NewlyAddedCars section */
+.new-section .container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.new-section .container img{
+    width: 500px;
+    height: 350px;
+}
+.new-section .container .grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+}
+.new-section .container .grid-container p{
+    font-weight: bold;
+}
+.new-section .container .grid-container .car1,
+.new-section .container .grid-container .car2,
+.new-section .container .grid-container .car3,
+.new-section .container .grid-container .car4,
+.new-section .container .grid-container .car5,
+.new-section .container .grid-container .car6,
+.new-section .container .grid-container .car7,
+.new-section .container .grid-container .car8,
+.new-section .container .grid-container .car9,
+.new-section .container .grid-container .car10,
+.new-section .container .grid-container .car11,
+.new-section .container .grid-container .car12
+{
+    margin: auto;
+    width: 450px;
+    transition: 0.2s ease;
+}
+.new-section .container .grid-container .car1 img,
+.new-section .container .grid-container .car2 img,
+.new-section .container .grid-container .car3 img,
+.new-section .container .grid-container .car4 img,
+.new-section .container .grid-container .car5 img,
+.new-section .container .grid-container .car6 img,
+.new-section .container .grid-container .car7 img,
+.new-section .container .grid-container .car8 img,
+.new-section .container .grid-container .car9 img,
+.new-section .container .grid-container .car10 img,
+.new-section .container .grid-container .car11 img,
+.new-section .container .grid-container .car12 img{
+    border-radius: 35px;
+}
+
+.new-section .container .grid-container .car1:hover,
+.new-section .container .grid-container .car2:hover,
+.new-section .container .grid-container .car3:hover,
+.new-section .container .grid-container .car4:hover,
+.new-section .container .grid-container .car5:hover,
+.new-section .container .grid-container .car6:hover,
+.new-section .container .grid-container .car7:hover,
+.new-section .container .grid-container .car8:hover,
+.new-section .container .grid-container .car9:hover,
+.new-section .container .grid-container .car10:hover,
+.new-section .container .grid-container .car11:hover,
+.new-section .container .grid-container .car12:hover
+{
+    transform: translateY(-5px);
+}
+/* end NewlyAddedCars section */
+/* start about us section */
+.about{
+    background-color: #e7e7e7;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.about .container .all .grid-container .name{
+    display: inline-block;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 10px;
+    padding-bottom: 50px;
+}
+.about .container .all .grid-container .name p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.about .container .all .grid-container .name img{
+    border-radius: 500px;
+}
+.about .container .all .grid-container .final{
+    display: inline-block;
+}
+.about .container .all i{
+    font-size: xx-large;
+}
+
+.about .container .all .grid-container img{
+    width: 250px;
+    height: 300px;
+}
+
+
+.gototop{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 30px;
+    background:snow;
+    color: var(--main-color);
+    font-size: 40px;
+}
